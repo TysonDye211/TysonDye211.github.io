@@ -1,0 +1,185 @@
+body{
+    min-width: 950px;
+	background-color: #1B1E21;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+}
+
+.content{
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-----CONTENT-----*/
+#slideshow{
+    margin-top: 145px;
+    width: 100%;    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h2{
+    width: 850px;
+    text-align: left;
+    font-size: 2em;
+}
+
+#about {
+    float: left;
+    width: 400px;
+    text-align: justify;
+    padding-top: 100px;
+}
+
+#self-portrait {
+    float: right;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+#services{
+    clear: both;
+    text-align: center;
+    padding-top: 100px;
+    height: 800px;
+}
+
+figure{
+    float: right;
+    margin-top: 50px;
+}
+
+figcaption{
+    width: 200px;
+    margin-bottom: 100px;
+}
+
+#how-to{
+    clear: both;
+    text-align: center;
+    padding-top: 100px;
+    height: 800px;
+}
+
+#gallery{
+    clear: both;
+    text-align: center;
+    padding-top: 100px;
+    height: 800px;
+}
+
+#contact{
+    clear: both;
+    text-align: center;
+    padding-top: 100px;
+    height: 800px;
+}
+
+#contact p{
+    font-size: 1.5em;
+}
+/*-----HEADER-----*/
+
+ul{
+	list-style-type: none;
+    float: right;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 115px;
+}
+
+li{
+	display: inline;
+	float: left;
+}
+
+img.logo{
+	float: left;
+}
+
+
+nav{
+	width: 1150px;
+	margin: 0 auto;
+}
+
+header{
+    background: #1B1E21;
+	float: left;
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+    text-align: center;
+}
+
+header a{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+header a.active, header a:hover{
+	color: #33CCFF;
+}
+
+header li{
+	margin-right: 30px;
+}
+
+/* Sizes for the bigger menu */
+header.large{
+	height: 150px;
+}
+
+header.large img{
+	width: 400px;
+    padding-top: 30px;
+    margin-right: -95px;
+}
+
+header.large li{
+	margin-top: 45px;
+}
+
+/* Sizes for the smaller menu */
+header.small{ 
+    padding-top: 15px;
+	height: 50px;
+    padding-bottom: 15px;
+    box-shadow: 2px 2px 25px #010101; 
+}
+
+header.small img{ 
+	width: 287px; 
+    margin-top: 9px;
+}
+
+header.small li{ 
+	margin-top: 17px; 
+}
+
+header, a, img, li{
+	transition: all .35s;
+	-moz-transition: all .35s; /* Firefox 4 */
+	-webkit-transition: all .35s; /* Safari and Chrome */
+	-o-transition: all .35s; /* Opera */
+}
+
+#placeholder{
+    height: 400px;
+    margin-bottom: 200px;
+}
+
+/*-----FOOOTER-----*/
+.footer{
+    text-align: center;
+}

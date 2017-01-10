@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Two Eleven Electric</title>
+        <link href="tydye-styleguide.css" type="text/css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Quicksand|Roboto" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+    </head>
+    <body>
+        <div class="header" id="home">
+            <header class="large">
+                <nav>
+                    <img src="images/two-eleven-electric-logo2.png" alt="=Two Eleven Electric Logo"/>
+                    <ul>
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="#how-to">how to</a></li>
+                        <li><a href="#gallery">gallery</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        
+        <div class="place-holder"></div>
+        
+        <img id="slideshow" src="images/slideshow1.jpg" alt="slide show image"/>
+        
+        <div class="content">
+        <div id="about">
+            <h2>about the owner</h2>
+            <p> Tyson began his career as an apprentice electrician at Eastern Idaho Technical College. After four years of education, and 8000 hours of supervised instruction, he received his Journeyman electrician license with the state of Idaho. Eleven years of electrical experience provides him with a familiarity of a wide variety of electrical practices ranging from standard wiring methods to automated controls. His experience results now in a strong familiarity with the National Electrical         Code, having completed many electrical applications in a safe and effective manner. <br/><br/>
+	        
+            To broaden his education, he returned to school and completed the Industrial Instrumentation/Automation program at Idaho State University. This education provided him with theory of control circuits and automated processes. Earlier in his education, he completed a number of business management courses at BYU-Idaho. <br/><br/>
+	
+            Tyson was recruited by Exelon Generation to operate a Combined Cycle Gas Power Plant in Texas. In this role, he became familiar with operation procedures and safe working standards. At one point, he was assigned the task of managing the installation of an automated water purification facility along with an automated steam chemistry sampling units. <br/><br/>
+ 	
+            Tyson returned to Idaho to work as a Controls Designer for Power Engineers. Working with a team of engineers he created wiring diagrams, control logics, network diagrams, and instrument installation details for combined cycle and geothermal power plants. He furthered his career by passing the state of Idaho Master Electrician test in 2015. <br/><br/>
+	
+            Currently, Tyson operates and maintains the electrical components of a 100 Mega Watt HydroElectric Power Plant in Boise Idaho. His work experience and education has allowed him to achieve a long term goal of owning his own Electrical Contracting Company. 211 Electric was established in 2016 serving Electrical Contracting and Consulting services in the state of Idaho.<br/><br/>
+        </div>
+    
+        <img id="self-portrait" src="images/tyson-portrait.jpg" alt="self portrait"/> 
+        
+        <div id="services">
+            <h2>service</h2>
+            <figure>
+                <div>
+                    <a href="electrical-installation.html">
+                        <img src="images/service-comp1.jpg"/>
+                    </a>
+                </div>
+            <figcaption>
+                <a href="electrical-installation.html">Commercial and Residential Electrical Installation and Maintenance</a>
+            </figcaption>
+            </figure>
+        
+            <figure>
+                <div>
+                    <a href="industrial-electrical-testing.html">
+                        <img src="images/service-comp2.jpg"/>
+                    </a>
+                </div>
+            <figcaption>
+                <a href="industrial-electrical-testing.html">Industrial Electrical Testing and Maintenance</a>
+            </figcaption>
+            </figure>
+
+            <figure>
+                <div>
+                    <a href="thermography-infrared.html">
+                        <img src="images/service-comp3.jpg"/>
+                    </a>
+                </div>
+            <figcaption>
+                <a href="thermography-infrared.html">Thermography Infrared Testing of Electrical Components and Structures</a>
+            </figcaption>
+            </figure>
+        </div>
+        
+        <div id="how-to">
+            <h2>how to</h2>
+            <p>slideshow of video's will be available for viewing here</p>
+        </div>
+        
+        <div id="gallery">
+            <h2>gallery</h2>
+            <p>images of previous work will be available here</p>
+        </div>
+        
+        <div id="contact">
+            <h2>contact</h2>
+            <p>Tyson Dye</p>
+            <p>208.991.6700</p>
+            <p><a href="https://www.facebook.com" target="_blank">Like us on Facebook!</a></p>
+            <p><a href="mailto:two.eleven.electric@gmail.com">Or email me directly here!</a></p>
+        </div>
+        </div>
+        
+        <div class="footer">
+            <footer>
+                <p>&copy;Tyson Dye</p>
+            </footer>
+        </div>
+        
+        <script type="text/javascript">
+		$(document).on("scroll",function(){
+			if($(document).scrollTop()>100){ 
+				$("header").removeClass("large").addClass("small");
+				}
+			else{
+				$("header").removeClass("small").addClass("large");
+				}
+			});
+	   </script>
+        
+    </body>
+</html>

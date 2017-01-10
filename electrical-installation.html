@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Two Eleven Electric</title>
+        <link href="tydye-styleguide.css" type="text/css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Quicksand|Roboto" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+    </head>
+    <body>
+        <div class="header" id="home">
+            <header class="large">
+                <nav>
+                    <a href="tysondye-index.html">
+                        <img src="images/two-eleven-electric-logo2.png" alt="=Two Eleven Electric Logo"/>
+                    </a>
+                    <ul>
+                        <li><a href="tysondye-index.html">home</a></li>
+                        <li><a href="electrical-installation.html">electrical installation</a></li>
+                        <li><a href="industrial-electrical-testing.html">industrial testing</a></li>
+                        <li><a href="thermography-infrared.html">thermography infrared</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        
+        <div id="placeholder"></div>
+        
+        <h2>information about Electrical Installation will appear here. If you want, if not we can get rid of this page.</h2>
+        
+    <div class="footer">
+            <footer>
+                <p>&copy;Tyson Dye</p>
+            </footer>
+    </div>
+    <script type="text/javascript">
+		$(document).on("scroll",function(){
+			if($(document).scrollTop()>100){ 
+				$("header").removeClass("large").addClass("small");
+				}
+			else{
+				$("header").removeClass("small").addClass("large");
+				}
+			});
+	   </script>
+        
+    </body>
+</html>
