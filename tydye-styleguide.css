@@ -11,14 +11,38 @@ body{
 }
 
 .content{
-    width: 850px;
+    width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/*-----CONTENT-----*/
-#slideshow{
-    margin-top: 145px;
+h2{
+    width: 850px;
+    text-align: left;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/*-----TOP PAGE/NAVIGATION-----*/
+
+#logo{
+    clear: both;
+    position: relative;
+    margin-top: 20%;
+    margin-left: 30%;
+    width: 40%;
+}
+
+.top {
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  height: 64%;
+  opacity: 1;
+}
+
+#homepage-image{
     width: 100%;    
 }
 
@@ -27,17 +51,52 @@ a{
     color: white;
 }
 
-h2{
-    width: 850px;
-    text-align: left;
-    font-size: 2em;
+/*-----HEADER-----*/
+ul li{
+    display: inline;
+    text-align: center;
+    text-transform: uppercase;
+    list-style-type: none;
+    padding: 0px 30px 0px 30px;
 }
 
+.nav-container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+#top-nav{
+    position: fixed;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #1B1E21;
+    display: none;
+}
+
+.top {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: 64%;
+  opacity: 1;
+}
+
+/*-----FOOTER-----*/
+.footer{
+    clear: both;
+    text-align: center;
+    margin-top: 100px;
+    padding: 25px;
+    background-color: #2F3133;
+}
+
+/*-----ABOUT-----*/
 #about {
     float: left;
-    width: 400px;
+    width: 450px;
     text-align: justify;
-    padding-top: 100px;
+    padding-top: 125px;
 }
 
 #self-portrait {
@@ -46,140 +105,170 @@ h2{
     margin-bottom: 100px;
 }
 
+/*-----SERVICES-----*/
+
 #services{
     clear: both;
     text-align: center;
     padding-top: 100px;
-    height: 800px;
 }
 
-figure{
-    float: right;
-    margin-top: 50px;
+#services img{
+    position: relative;
+    width: 33%;
+    float: left;
+    padding: 1px;
 }
 
-figcaption{
-    width: 200px;
-    margin-bottom: 100px;
-}
-
+/*-----VIDEOS-----*/
 #how-to{
     clear: both;
     text-align: center;
     padding-top: 100px;
-    height: 800px;
 }
 
+/*-----GALLERY-----*/
 #gallery{
-    clear: both;
-    text-align: center;
     padding-top: 100px;
-    height: 800px;
+    margin: auto;
+    text-align: center;
 }
 
+/*images for the gallery are 350x350 px in size*/
+.gallery-image{
+    margin: auto;
+    width: 33%;
+}
+
+.fade {
+   opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
+
+.fade:hover {
+      opacity: 0.5;
+      }
+
+/*-----CONTACT-----*/
 #contact{
     clear: both;
     text-align: center;
     padding-top: 100px;
-    height: 800px;
 }
 
-#contact p{
+#contact h2{
+    margin-bottom: 120px;
+}
+
+#contact img{
+    padding: 30px;
+    width: 80px;
+}
+
+/*-----SECONDARY PAGES-----*/
+
+#secondary-nav{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 850px;
+}
+
+#secondary-nav ul li{
+    display: inline;
+    text-align: center;
+    text-transform: uppercase;
+    list-style-type: none;
+    padding: 0px 15px 0px 15px;
+}
+
+#secondary-icon{
+    width: 200px;
+    float: left;
+}
+
+#secondary-page-content{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 850px;
+}
+
+/*-----ANIMATIONS/TRANSITIONS-----*/
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .facebook-tooltiptext {
+    visibility: hidden;
+    text-align: center;
     font-size: 1.5em;
-}
-/*-----HEADER-----*/
-
-ul{
-	list-style-type: none;
-    float: right;
-    padding: 0px;
-    margin: 0px;
-    margin-right: 115px;
-}
-
-li{
-	display: inline;
-	float: left;
+    width: 250px;
+    background-color: #1B1E21;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    border-style: .5px solid white; 
+    top: -90px;
+    left: 85px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
 }
 
-img.logo{
-	float: left;
-}
-
-
-nav{
-	width: 1150px;
-	margin: 0 auto;
-}
-
-header{
-    background: #1B1E21;
-	float: left;
-	width: 100%;
-	position: fixed;
-	z-index: 10;
+/* Tooltip text */
+.tooltip .phone-tooltiptext {
+    visibility: hidden;
     text-align: center;
+    font-size: 1.5em;
+    width: 150px;
+    background-color: #1B1E21;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    top: -90px;
+    left: -10px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
 }
 
-header a{
-	color: white;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
-header a.active, header a:hover{
-	color: #33CCFF;
-}
-
-header li{
-	margin-right: 30px;
-}
-
-/* Sizes for the bigger menu */
-header.large{
-	height: 150px;
-}
-
-header.large img{
-	width: 400px;
-    padding-top: 30px;
-    margin-right: -95px;
-}
-
-header.large li{
-	margin-top: 45px;
-}
-
-/* Sizes for the smaller menu */
-header.small{ 
-    padding-top: 15px;
-	height: 50px;
-    padding-bottom: 15px;
-    box-shadow: 2px 2px 25px #010101; 
-}
-
-header.small img{ 
-	width: 287px; 
-    margin-top: 9px;
-}
-
-header.small li{ 
-	margin-top: 17px; 
-}
-
-header, a, img, li{
-	transition: all .35s;
-	-moz-transition: all .35s; /* Firefox 4 */
-	-webkit-transition: all .35s; /* Safari and Chrome */
-	-o-transition: all .35s; /* Opera */
-}
-
-#placeholder{
-    height: 400px;
-    margin-bottom: 200px;
-}
-
-/*-----FOOOTER-----*/
-.footer{
+/* Tooltip text */
+.tooltip .email-tooltiptext {
+    visibility: hidden;
     text-align: center;
+    font-size: 1.5em;
+    width: 310px;
+    background-color: #1B1E21;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    top: -90px;
+    left: -235px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .facebook-tooltiptext {
+    visibility: visible;
+}
+
+.tooltip:hover .phone-tooltiptext {
+    visibility: visible;
+}
+
+.tooltip:hover .email-tooltiptext {
+    visibility: visible;
 }

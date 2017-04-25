@@ -9,28 +9,30 @@
     </head>
     <body>
         <div class="header" id="home">
-            <header class="large">
-                <nav>
-                    <img src="images/two-eleven-electric-logo2.png" alt="=Two Eleven Electric Logo"/>
+            <header id="top-nav">
+                <nav class="nav-container">
                     <ul>
-                        <li><a href="#home">home</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#services">services</a></li>
-                        <li><a href="#how-to">how to</a></li>
-                        <li><a href="#gallery">gallery</a></li>
-                        <li><a href="#contact">contact</a></li>
+                        <li class="nav-one"><a href="#home">home</a></li>
+                        <li class="nav-two"><a href="#about">about</a></li>
+                        <li class="nav-three"><a href="#services">services</a></li>
+                        <li class="nav-four"><a href="#how-to">how to</a></li>
+                        <li class="nav-five"><a href="#gallery">gallery</a></li>
+                        <li class="nav-six"><a href="#contact">contact</a></li>
                     </ul>
                 </nav>
             </header>
+             
         </div>
         
-        <div class="place-holder"></div>
+        <div class="top">
+                <img id="logo" src="images/211-logo-original.png" alt="=Two Eleven Electric Logo"/>
+        </div>
         
-        <img id="slideshow" src="images/slideshow1.jpg" alt="slide show image"/>
+        <img id="homepage-image" src="images/211-main-web.png" alt="main-image"/>
         
         <div class="content">
         <div id="about">
-            <h2>about the owner</h2>
+            <h2>about Tyson Dye</h2>
             <p> Tyson began his career as an apprentice electrician at Eastern Idaho Technical College. After four years of education, and 8000 hours of supervised instruction, he received his Journeyman electrician license with the state of Idaho. Eleven years of electrical experience provides him with a familiarity of a wide variety of electrical practices ranging from standard wiring methods to automated controls. His experience results now in a strong familiarity with the National Electrical         Code, having completed many electrical applications in a safe and effective manner. <br/><br/>
 	        
             To broaden his education, he returned to school and completed the Industrial Instrumentation/Automation program at Idaho State University. This education provided him with theory of control circuits and automated processes. Earlier in his education, he completed a number of business management courses at BYU-Idaho. <br/><br/>
@@ -45,57 +47,65 @@
         <img id="self-portrait" src="images/tyson-portrait.jpg" alt="self portrait"/> 
         
         <div id="services">
-            <h2>service</h2>
-            <figure>
-                <div>
-                    <a href="electrical-installation.html">
-                        <img src="images/service-comp1.jpg"/>
-                    </a>
-                </div>
-            <figcaption>
-                <a href="electrical-installation.html">Commercial and Residential Electrical Installation and Maintenance</a>
-            </figcaption>
-            </figure>
-        
-            <figure>
+            <h2>services</h2>     
                 <div>
                     <a href="industrial-electrical-testing.html">
-                        <img src="images/service-comp2.jpg"/>
+                        <img src="images/industrial-icon.png"/>
+                        <span id="industrial" class="text-content"></span>
                     </a>
                 </div>
-            <figcaption>
-                <a href="industrial-electrical-testing.html">Industrial Electrical Testing and Maintenance</a>
-            </figcaption>
-            </figure>
-
-            <figure>
+            
                 <div>
                     <a href="thermography-infrared.html">
-                        <img src="images/service-comp3.jpg"/>
+                        <img src="images/thermal-icon.png"/>
+                        <span id="thermal" class="text-content"></span>
                     </a>
                 </div>
-            <figcaption>
-                <a href="thermography-infrared.html">Thermography Infrared Testing of Electrical Components and Structures</a>
-            </figcaption>
-            </figure>
+
+                <div>
+                    <a href="electrical-installation.html">
+                        <img src="images/residential-icon.png"/>
+                        <span id="residential" class="text-content"></span>
+                    </a>
+                </div>
+
         </div>
         
         <div id="how-to">
             <h2>how to</h2>
-            <p>slideshow of video's will be available for viewing here</p>
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/cya1Vnjyx8o?rel=0" frameborder="0" allowfullscreen></iframe>
         </div>
         
         <div id="gallery">
             <h2>gallery</h2>
-            <p>images of previous work will be available here</p>
+                
+                <img class="gallery-image fade" id="test-gallery1" src="images/test-gallery1.jpeg" alt="test gallery 1"/>
+                
+                <img class="gallery-image fade" id="test-gallery2" src="images/test-gallery2.jpg" alt="test gallery 2"/>
+            
+                <img class="gallery-image fade" id="test-gallery3" src="images/test-gallery3.jpg" alt="test gallery 3"/>
+            
+                <img class="gallery-image fade" id="test-gallery4" src="images/test-gallery4.jpeg" alt="test gallery 4"/>
+            
+                <img class="gallery-image fade" id="test-gallery5" src="images/test-gallery5.jpeg" alt="test gallery 5"/>
+            
+                <img class="gallery-image fade" id="test-gallery6" src="images/test-gallery6.jpeg" alt="test gallery 6"/>
         </div>
         
         <div id="contact">
-            <h2>contact</h2>
-            <p>Tyson Dye</p>
-            <p>208.991.6700</p>
-            <p><a href="https://www.facebook.com" target="_blank">Like us on Facebook!</a></p>
-            <p><a href="mailto:two.eleven.electric@gmail.com">Or email me directly here!</a></p>
+            <h2>contact Tyson</h2>
+            <div class="tooltip">
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-icon.png"/></a>
+                    <span class="facebook-tooltiptext">facebook/211electric.com</span>
+                </div>
+            <div class="tooltip">
+                <img src="images/phone-icon.png"/>
+                <span class="phone-tooltiptext">208.991.6700</span>
+            </div>
+            <div class="tooltip">
+                <a href="mailto:two.eleven.electric@gmail.com"><img src="images/email-icon.png"/></a>
+                <span class="email-tooltiptext">two.eleven.electric@gmail.com</span>
+            </div>
         </div>
         </div>
         
@@ -106,15 +116,17 @@
         </div>
         
         <script type="text/javascript">
-		$(document).on("scroll",function(){
-			if($(document).scrollTop()>100){ 
-				$("header").removeClass("large").addClass("small");
-				}
-			else{
-				$("header").removeClass("small").addClass("large");
-				}
-			});
+            
+        $(window).scroll(function(){
+            $(".top-nav").css("opacity", 1 + $(window).scrollTop() / 250);
+        });
+            
+        $(window).scroll(function(){
+            $(".top").css("opacity", 1 - $(window).scrollTop() / 250);
+        });
 	   </script>
+        <script type="text/javascript" src="jquery2-2-1.js"></script>
+        <script type="text/javascript" src="awesomeness.js"></script>
         
     </body>
 </html>

@@ -9,10 +9,10 @@
     </head>
     <body>
         <div class="header" id="home">
-            <header class="large">
-                <nav>
+            <header>
+                <nav id="secondary-nav">
                     <a href="index.html">
-                        <img src="images/two-eleven-electric-logo2.png" alt="=Two Eleven Electric Logo"/>
+                        <img id="secondary-icon" src="images/211-logo-original.png" alt="=Two Eleven Electric Logo"/>
                     </a>
                     <ul>
                         <li><a href="index.html">home</a></li>
@@ -24,25 +24,15 @@
             </header>
         </div>
         
-        <div id="placeholder"></div>
-        
-        <h2>information about Thermography Infrared Testing of Electrical Componenets and Structures will appear here. If you want, if not we can get rid of this page.</h2>
+        <div id="secondary-page-content">
+            <h2>information about Thermography Infrared Testing of Electrical Componenets and Structures will appear here. If you want, if not we can get rid of this page.</h2>
+        </div>
         
     <div class="footer">
             <footer>
                 <p>&copy;Tyson Dye</p>
             </footer>
     </div>
-    <script type="text/javascript">
-		$(document).on("scroll",function(){
-			if($(document).scrollTop()>100){ 
-				$("header").removeClass("large").addClass("small");
-				}
-			else{
-				$("header").removeClass("small").addClass("large");
-				}
-			});
-	   </script>
         
     </body>
 </html>
